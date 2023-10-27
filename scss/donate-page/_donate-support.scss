@@ -1,0 +1,328 @@
+.donate-support{
+	background-color: #000;
+	position: relative;
+	padding: 0 0 132px;
+	&::before{
+		content: "";
+		display: none;
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		max-height: 1217px;
+		left: 0;
+		background-image: url('../images/gradients_background-donate1.png');
+		background-size: cover;
+		@media (min-width: 1200px){
+			display: block;
+			z-index: 2;
+			top: -40px;
+		}
+	}
+	&::after{
+		content: "";
+		display: block;
+		position: absolute;
+		width: 100%;
+		height: 8px;
+		bottom: 0;
+		left: 0;
+		background: linear-gradient(90deg, #B191DF -2.36%, #0FB1A4 33.42%, #651AE6 68.52%, #E01576 100.92%);
+	}
+	.bg-logo{
+		width: 209px;
+		height: 263px;
+		display: none;
+		position: absolute;
+		left: 0;
+		top: 47px;
+		img{
+			width: 100%;
+			height: 100%;
+			object-fit: contain;
+		}
+		@media (min-width: 1200px){
+			display: block;
+		}
+	}
+	.container{
+		position: relative;
+		z-index: 3;
+	}
+	.row-testimonial{
+		position: relative;
+		padding: 96px 0;
+		&::after{
+			content: "";
+			position: absolute;
+			bottom: 0; 
+			left: 100vw;
+			height: 1px;
+			width: 42.36vw;
+			transform: translate(-50vw, 0);
+			opacity: 0.6;
+			border-bottom:  0.5px solid $secondary;
+		}
+	}
+	.title-container{
+		display: flex;
+		flex-wrap: wrap;
+		align-items: flex-end;
+		.donate-header{
+			padding-top: 34px;
+			margin-right: 36px;
+		}
+		.img-donate{
+			width: 114px;
+			height: 190px;
+			margin-top: 10px;
+			img{
+				width: 100%;
+				height: 100%;
+				object-fit: contain;
+				object-position: bottom left;
+			}
+		}
+		@media (min-width: 1200px){
+			flex-wrap: nowrap;
+			align-items: flex-start;
+			.img-container{
+				margin-top: 0;
+			}
+		}
+	}
+	.uppertitle{
+    @include font1;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 18px;
+    letter-spacing: 0.11em;
+    text-transform: uppercase;
+    color: $white !important;
+  }
+
+  .img-icon{
+    display: block;
+    text-align: left;
+    img{
+      width: auto;
+      height: auto;
+      object-fit: contain;
+      margin-bottom: 17px;
+    }
+  }
+
+	.cite{
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-end;
+		position: relative;
+		&::after{
+			content: '';
+			display: block;
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			width: 113px;
+			height: 53px;
+			background-image: url('../images/violet-brush-2.png');
+			background-size: cover;
+			background-position: center;
+			background-repeat: no-repeat;
+		}
+		.cite-quote{
+			position: relative;
+			z-index: 2;
+			p, span, a, h2, h3, h4, h5, h6{
+				@include font2;
+				font-style: normal !important;
+				font-weight: 900 !important;
+				font-size: 12px !important;
+				line-height: 19px !important;
+				letter-spacing: 0.05em !important;
+				text-transform: uppercase !important;
+				max-width: 445px !important;
+				color: $white !important;
+				margin-bottom: 19px !important;
+			}
+		}
+		.cite-sig{
+			position: relative;
+			z-index: 2;
+			.name{
+				position: relative;
+				display: inline-block;
+				@include font1;
+				color: $white;
+				font-style: normal;
+				font-weight: bold;
+				font-size: 11px;
+				line-height: 18px;
+				letter-spacing: 0.11em;
+				text-transform: uppercase;
+				margin-bottom: 6px;
+				&::before{
+					content: "—";
+					display: inline-block;
+					margin-right: 5px;
+	
+				}
+			}
+			.position{
+				position: relative;
+				z-index: 2;
+				@include font1;
+				display: block;
+				font-style: normal;
+				font-weight: normal;
+				font-size: 11px;
+				line-height: 18px;
+				letter-spacing: 0.11em;
+				text-transform: uppercase;
+				color: $white;
+			}
+		}
+	}
+	.row-support{
+		padding: 120px 0 82px;
+	}
+	.donate-content{
+		position: relative;
+		z-index: 3;
+		.content-header{
+			span{
+				display: block;
+			}
+			.content-icon{
+				width: 26px;
+				height: 31px;
+				margin-bottom: 12px;
+				img{
+					width: 100%;
+					height: 100%;
+					object-fit: contain;
+					object-position: bottom left;
+				}
+			}
+			.content-uppertitle{
+				font-style: normal;
+				font-weight: 500;
+				font-size: 13px;
+				line-height: 18px;
+				letter-spacing: 0.11em;
+				text-transform: uppercase;
+				margin-bottom: 8px !important;
+				color: $primary !important;
+			}
+			.content-title{
+				color: $white !important;
+        margin-bottom: 10px !important;
+			}
+		}
+		.content-text{
+      margin-bottom: 30px !important;
+			span{
+				@include font1;
+				color: $white !important;
+        font-style: normal;
+				font-weight: normal;
+				font-size: 15px;
+				line-height: 20px;
+				letter-spacing: 0.05em;
+			}
+		}
+	}
+	.support-data{
+		display: flex;
+		align-items: flex-start;
+		margin-bottom: 39px;
+		.data-icon{
+			flex: 0 0 auto;
+			display: inline-block;
+			width: 40px;
+			height: 40px;
+			margin-right: 30px;
+			img{
+				object-fit: contain;
+				width: 100%;
+				height: 100%;
+				object-position: top right;
+			}
+		}
+		.data-text{
+			.data-title{
+				@include font1;
+				font-style: normal;
+				font-weight: 500;
+				font-size: 13px;
+				line-height: 18px;
+				letter-spacing: 0.11em;
+				text-transform: uppercase;
+				color: $secondary !important;
+				margin-bottom: 5px;
+			}
+			.data-description{
+				@include font1;
+				font-style: normal;
+				font-weight: normal;
+				font-size: 15px;
+				line-height: 20px;
+				letter-spacing: 0.05em;
+				color: $white !important;
+			}
+		}
+	}
+
+	.row-equipment{
+		align-items: center;
+		.img-equipment{
+			width: 100%;
+			height: 100%;
+			position: relative;
+			&::after{
+				content: none;
+				display: none;
+				position: absolute;
+				bottom: -27px;
+				left: -43px;
+				width: 303px;
+				height: 54px;
+				background-image: url('../images/green-brush.png');
+				background-size: contain;
+				background-position: center;
+				background-repeat: no-repeat;
+				@media (min-width: 1200px){
+					content: '';
+					display: block;
+				}
+			}
+			img{
+				position: relative;
+				z-index: 1;
+				object-fit: contain;
+			}
+		}
+		.equipment-uppertitle{
+			@include font1;
+			font-style: normal;
+			font-weight: 500;
+			font-size: 13px;
+			line-height: 18px;
+			letter-spacing: 0.11em;
+			text-transform: uppercase;
+			color: $white;
+			margin-bottom: 10px;
+		}
+		.equipment-title{
+			color: $tertiary !important;
+			margin-bottom: 11px !important;
+		}
+		.equipment-text{
+			p{
+				color: $white !important;
+				margin-bottom: 16px;
+			}
+		}
+	}
+
+}

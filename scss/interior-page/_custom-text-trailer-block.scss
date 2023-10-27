@@ -1,0 +1,28 @@
+.custom-text-trailer-block {
+	position: relative;
+
+	&.solid-background-color {
+		&::before {
+			background: inherit;
+		}
+	}
+
+
+	.card.img-bg {
+		margin-bottom: 22px;
+		@media (min-width: 768px) {
+			min-height: 298px;
+		}
+	}
+	.img-wrap {
+		img {
+			height: 100%;
+		}
+		&::before {
+			opacity: 0.43;
+			background-color: #000000;
+			z-index: 2;
+		}
+	}
+}
+  

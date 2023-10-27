@@ -1,0 +1,181 @@
+.interior-page {
+  #accordionBlock,
+  .elevation-accordion,
+  .accordion {
+    .card:not(.team-card) {
+      border-radius: 0 !important;
+      // box-shadow: none !important;
+      box-shadow: 0 0 14px 0 rgba(0, 0, 0, 0.14);
+      margin-bottom: 14px;
+      border: none;
+      // border-bottom: 1.5px solid #cecece;
+      &:first-child {
+        .card-header h2 .btn {
+          &::before {
+            content: "\f078";
+          }
+        }
+      }
+      .card-header {
+        padding: 0 !important;
+        margin: 0 !important;
+        background: white !important;
+        border-radius: 0 !important;
+        border-bottom: none;
+        h2,
+        h3,
+        h4,
+        h6 {
+          @include font2;
+          font-size: 26px;
+          font-weight: bold;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 1.22;
+          letter-spacing: -0px;
+          color: $primary;
+          .btn {
+            color: inherit;
+            display: block;
+            font-size: inherit;
+            font-weight: inherit;
+            margin: 0 !important;
+            padding: 1.25rem 50px 1.25rem 1.25rem;
+            padding-left: 44px;
+            position: relative;
+            text-align: left;
+            width: 100%;
+            white-space: normal !important;
+            box-shadow: none !important;
+            outline: none;
+            border-radius: 0;
+            // background: $grey-light;
+            &[aria-expanded^="true"]::before {
+              content: "\f077";
+              color: $primary;
+            }
+            &[aria-expanded^="false"]::before {
+              content: "\f078";
+            }
+            &[aria-expanded^="true"] {
+              // color: white;
+              // font-weight: 700;
+              // background: $primary-light;
+            }
+            &::before {
+              font-family: "Font Awesome 5 Free";
+              font-weight: 900;
+              font-style: normal;
+              font-variant: normal;
+              text-rendering: auto;
+              -webkit-font-smoothing: antialiased;
+              /*--adjust as necessary--*/
+              color: #959595;
+              display: inline-block;
+              font-size: 10px;
+              line-height: 1;
+              margin-right: 18px;
+              position: absolute;
+              right: 0;
+              top: calc(50% - 5px);
+            }
+            &.collapsed {
+              //background: $primary;
+              &::before {
+                content: "\f078";
+              }
+            }
+            &:hover,
+            &:focus,
+            &:active {
+              text-decoration: none;
+            }
+          }
+        }
+      } /*.card.heade4r*/
+      .collapse {
+        .card-body {
+          background: white;
+          color: $text;
+          padding: 0;
+          p,
+          h3,
+          h2,
+          h4,
+          h5,
+          h6,
+          span:not(.btn-2),
+          strong,
+          em {
+            color: $text;
+          }
+        }
+        &.show {
+          margin-top: -2px;
+          .card-body {
+            padding: 19px;
+            padding-top: 0;
+            padding-left: 44px;
+            padding-right: 86px;
+            padding-bottom: 1.25rem;
+            // background: $primary-light;
+            // color: white;
+          }
+        }
+      }
+      .collapsing {
+        .card-body {
+          padding: 19px;
+        }
+      }
+      .collapse,
+      .collapsing {
+        opacity: 0;
+        &.show {
+          -webkit-animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1)
+            both;
+          animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+        }
+      }
+      @-webkit-keyframes fade-in {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+      @keyframes fade-in {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+@include mediaqueries(991max) {
+}
+@include mediaqueries(767max) {
+}
+@include mediaqueries(576max) {
+  .interior-page #accordionBlock .card .collapse .card-body,
+  .interior-page .elevation-accordion .card .collapse .card-body {
+    padding: 18px 19px;
+  }
+
+  .interior-page #accordionBlock .card .card-header h2,
+  .interior-page #accordionBlock .card .card-header h3,
+  .interior-page #accordionBlock .card .card-header h4,
+  .interior-page #accordionBlock .card .card-header h6,
+  .interior-page .elevation-accordion .card .card-header h2,
+  .interior-page .elevation-accordion .card .card-header h3,
+  .interior-page .elevation-accordion .card .card-header h4,
+  .interior-page .elevation-accordion .card .card-header h6 {
+    // font-size: 20px;
+  }
+}
+@include mediaqueries(320max) {
+}

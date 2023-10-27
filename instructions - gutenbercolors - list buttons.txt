@@ -1,0 +1,31 @@
+
+
+"primary-dark" => "#E01576"
+"primary-light" => "#FBEEF5"
+"secondary-dark" => "#651AE6"
+"secondary-light" => "#F6F4FB"
+"text" => "#1C1B21"
+"white" => "#ffffff"
+"black" => "#000000"
+
+---------------------------------------------------------------
+
+Buttons List Select 
+
+btn-1: Pink Button
+btn-1 secondary: light violet button
+btn-1 secondary-dark: violet button
+btn-1 black: black button
+btn-1 white-1: white button 1
+btn-1 white-2: white button 2
+btn-2 black simple button
+btn-2 white: white simple button
+btn-2 secondary: light violet simple button
+btn-2 tertiary: green button
+btn-2 primary-dark: pink simple button
+btn-1 download: download button
+btn-video: Video Button
+btn-1 btn-social: social button
+
+---------------------------------------------------------------
+

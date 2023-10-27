@@ -1,0 +1,81 @@
+.donate-offline{
+    position: relative;
+    padding: 85px 0 95px;
+		min-height: 309px;
+		&::after{
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			display: none;
+			background-image: url('../images/gradients_background-donate.png');
+			background-size: cover;
+			background-position: center;
+			width: 100%;
+			height: 100%;
+			@media (min-width: 1200px){
+				display: block;
+			}
+		}
+		.container{
+			position: relative;
+			z-index: 2;
+		}
+    .donate-offline-title{
+			.donate-offline-icon{
+				width: 20px;
+				height: 20px;
+				display: block;
+				margin-bottom: 11px;
+				img{
+					width: 100%;
+					height: 100%;
+					object-fit: contain;
+					object-position: bottom left;
+				}
+			}
+      .uppertitle{
+        @include font1;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 18px;
+        letter-spacing: 0.11em;
+        text-transform: uppercase;
+        margin-bottom: 7px;
+        color: $primary-dark;
+				display: block;
+      }
+      h3{
+        color: $primary-dark !important;
+        margin-bottom: 19px !important;
+      }
+    }
+    .donate-offline-text{
+      p{
+        color: $primary-dark;
+      }
+			.donate-question, .donate-reach, .donate-reach a{
+				@include font2;
+				font-style: normal;
+				font-weight: 900;
+				font-size: 13px;
+				line-height: 19px;
+				letter-spacing: 0.05em;
+				text-transform: uppercase;		
+			}
+			.donate-question{
+				color: $secondary-dark !important;
+			}
+			.donate-reach{
+				color: $primary-dark !important;
+				a{
+					text-decoration: underline !important;
+					&:hover{
+						text-decoration: none !important;
+						color: $primary-dark !important;
+					}
+				}
+			}
+    }
+}

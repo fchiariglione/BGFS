@@ -1,0 +1,807 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<!--style CSS -->
+	<link rel="stylesheet" href="css/style.css">
+	<!--FontAwesome-->
+	<link href="fontawesome/css/all.min.css" rel="stylesheet">
+	<!-- Adobe Fonts -->
+	<link rel="stylesheet" href="https://use.typekit.net/rjf0jzz.css">
+	<!-- Link Swiper's CSS -->
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+	<!--AOS Animation -->
+	<link href="aos-animation/aos.css" rel="stylesheet">
+	<script src="aos-animation/aos.js"></script>
+	<!-- gravity forms and Tribe events(don't include) -->
+	<link rel="stylesheet" href="css/formsmain.min.css">
+	<link rel="stylesheet" href="css/tribe-events-full.min.css">
+	<link rel="stylesheet" href="css/tribe-events-theme.min.css">
+	<link rel="stylesheet" href="css/tribe-events-theme-mobile.min.css">
+	<!-- Fancy Box CSS -->
+	<link rel="stylesheet" href="css/jquery.fancybox.min.css">
+	<!-- gutenberg block CSS -->
+	<!-- <link rel="stylesheet" href="css/block-library/style.css"> -->
+	<!-- social feed master CSS -->
+	<!-- <link rel="stylesheet" href="elevation-social-feed-master/assets/css/style-feed.css">
+		 <link rel="stylesheet" href="elevation-social-feed-master/assets/css/style.css">
+		 -->
+
+
+
+
+
+
+
+
+	<title>Donate - Black Girl Film School</title>
+</head>
+
+
+<body class="donate">
+	<h1 class="sr-only">Donate to Black Girl Film School</h1>
+	<div id="loader" class="invert" style="display:block;opacity:1">
+		<div class="organic-container">
+			<div class="organic">
+				<div class="dot"></div>
+				<div class="dot"></div>
+				<div class="dot"></div>
+				<div class="dot"></div>
+				<div class="dot"></div>
+				<div class="logo-container">
+					<figure class="loader-logo img-wrap">
+						<!-- <img id="logo" class="bg-img" src="images/logo-color.png" alt="image event description">  -->
+						<figcaption class="sr-only">describes it from a functional perspective</figcaption>
+					</figure>
+				</div>
+
+			</div>
+		</div>
+		<svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+			<defs>
+				<filter id="organic">
+					<feGaussianBlur in="SourceGraphic" stdDeviation="4" result="blur" />
+					<feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7"
+						result="organic" />
+					<feBlend in="SourceGraphic" in2="organic" />
+				</filter>
+			</defs>
+		</svg>
+	</div>
+	<span id="top"></span>
+	<a href="#content" style="z-index: 99999;top: 5px;position: absolute;padding-left: 20px;left: 5px;"
+		class="sr-only sr-only-focusable btn-1 secondary">Skip to main content</a>
+	<header class="header fixed-top">
+		<section class="search-section">
+			<div class="container">
+				<div class="search">
+					<form method="get" id="searchform" class="searchform" action="\">
+						<div>
+							<label class="screen-reader-text" for="s">Search for:</label>
+							<input type="text" value="" name="s" id="s">
+							<input type="submit" id="searchsubmit" value="Search">
+						</div>
+					</form>
+				</div>
+			</div>
+		</section>
+		<section class="header-navigation">
+			<!-- Menu Navigation -->
+			<div class="header-register">
+				<span id="register" class="register-text">Summer Registration is OPEN. <a
+						href="">RegisterToday</a></span>
+			</div>
+			<nav class="navbar navbar-expand-xl">
+				<div class="container-lg">
+					<div class="navbar-header">
+						<a class="navbar-brand" href="/">
+							<picture>
+								<!-- <img srcset="images/logo-white.png" alt="My default image"> -->
+								<img srcset="images/logo-color.png" alt="My default image">
+								<img srcset="images/logo-color.png" alt="My default image">
+							</picture>
+						</a>
+						<button class="navbar-toggler collapsed" type="button" data-toggle="collapse"
+							data-target="#NavDropdown" aria-controls="NavDropdown" aria-expanded="false"
+							aria-label="Toggle navigation">
+							<span class="navbar-toggler-icon"></span>
+							<span class="sr-only">Menu</span>
+						</button>
+					</div>
+					<div class="col-middle box-b-c-container">
+						<div class="header-top box-b into-navbar">
+							<div class="extra-links-bar">
+								<div class="custom-links box">
+									<a href="#"> myBGFS</a>
+									<a href="#">blog</a>
+									<a href="#">contact us</a>
+									<a href="#">bgfs productions</a>
+								</div>
+								<!-- <div class="translate-box">
+										<select name="cars" id="cars" form="carform">
+											<option value="volvo">Volvo</option>
+											<option value="saab">Saab</option>
+											<option value="opel">Opel</option>
+											<option value="audi">Audi</option>
+										</select>
+									</div> -->
+								<div class="search-box box">
+									<button id="open-search" class="open-search">
+										<div class="icon-search"></div>
+									</button>
+								</div>
+							</div>
+						</div>
+						<div class="header-bottom box-c d-flex justify-content-end align-items-center">
+							<div class="collapse navbar-collapse" id="NavDropdown">
+
+								<div class="height-wrap">
+
+									<ul id="menu-menu" class="nav navbar-nav">
+										<li id="menu-item-1471"
+											class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1471 dropdown active">
+											<a title="Academics" href="/academics/" class="dropdown-toggle"
+												data-hover="dropdown" aria-haspopup="true">About</a>
+											<ul role="menu" class="dropdown-menu">
+												<li id="menu-item-1472"
+													class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1472">
+													<a title="Majors &amp; Programs" href="/majors-programs/">Majors
+														&amp; Programs</a>
+												</li>
+												<li id="menu-item-1473"
+													class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1473 dropdown active">
+													<a title="Course Catalog &amp; Schedule"
+														href="/course-catalog-schedule/">Course Catalog &amp;
+														Schedule</a>
+													<ul role="menu" class="dropdown-menu">
+														<li id="menu-item-1601"
+															class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1601 active">
+															<a title="Course Catalog &amp; Schedule"
+																href="/course-catalog-schedule/">Lorem Ipsum</a>
+														</li>
+														<li id="menu-item-1602"
+															class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1602">
+															<a title="Course Catalog &amp; Schedule"
+																href="/course-catalog-schedule/">Lorem Ipsum</a>
+														</li>
+														<li id="menu-item-1603"
+															class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1603">
+															<a title="Course Catalog &amp; Schedule"
+																href="/course-catalog-schedule/">Lorem Ipsum</a>
+														</li>
+													</ul>
+												</li>
+												<li id="menu-item-1474"
+													class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1474">
+													<a title="Academic calendar" href="/academic-calendar/">Academic
+														calendar</a>
+												</li>
+												<li id="menu-item-1545"
+													class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1545">
+													<a title="Academic Affairs" href="/academic-affairs/">Academic
+														Affairs</a>
+												</li>
+												<li id="menu-item-1476"
+													class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1476">
+													<a title="Academic Departments"
+														href="/academic-departments/">Academic Departments</a>
+												</li>
+											</ul>
+										</li>
+										<li id="menu-item-1477"
+											class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1477 dropdown">
+											<a title="Admissions" href="/admissions/" class="dropdown-toggle"
+												data-hover="dropdown" aria-haspopup="true">Film School</a>
+											<ul role="menu" class="dropdown-menu">
+												<li id="menu-item-1479"
+													class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1479">
+													<a title="Admission Requirements"
+														href="/admission-requirements/">Admission Requirements</a>
+												</li>
+												<li id="menu-item-1478"
+													class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1478">
+													<a title="Admission Procedure"
+														href="/admission-procedure/">Admission Procedure</a>
+												</li>
+												<li id="menu-item-1480"
+													class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1480">
+													<a title="Transfer of Credits" href="/transfer-of-credits/">Transfer
+														of Credits</a>
+												</li>
+												<li id="menu-item-1481"
+													class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1481">
+													<a title="Tuition and final aid"
+														href="/tuition-and-final-aid/">Tuition and final aid</a>
+												</li>
+												<li id="menu-item-1482"
+													class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1482">
+													<a title="Net Price Calculator" href="/net-price-calculator/">Net
+														Price Calculator</a>
+												</li>
+											</ul>
+										</li>
+										<li id="menu-item-1483"
+											class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1483 dropdown">
+											<a title="Student Resources" href="/student-resources/"
+												class="dropdown-toggle" data-hover="dropdown"
+												aria-haspopup="true">Events</a>
+											<ul role="menu" class="dropdown-menu">
+												<li id="menu-item-1484"
+													class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1484">
+													<a title="Email" href="https://login.microsoftonline.com">Email</a>
+												</li>
+												<li id="menu-item-1485"
+													class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1485">
+													<a title="Campus Cafe"
+														href="https://lit-web.scansoftware.com/cafeweb/login">Campus
+														Cafe</a>
+												</li>
+												<li id="menu-item-1486"
+													class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1486">
+													<a title="MyLPTC"
+														href="https://littlepriest.instructure.com/login/canvas">MyLPTC</a>
+												</li>
+												<li id="menu-item-1487"
+													class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1487">
+													<a title="Support Services" href="/support-services/">Support
+														Services</a>
+												</li>
+												<li id="menu-item-1488"
+													class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1488">
+													<a title="AIBL" href="https://www.aibl.org/">AIBL</a>
+												</li>
+												<li id="menu-item-1489"
+													class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1489">
+													<a title="AISES" href="https://woc.aises.org">AISES</a>
+												</li>
+												<li id="menu-item-1491"
+													class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1491">
+													<a title="Wakaja Learning Lab" href="/wakaja-learning-lab/">Wakaja
+														Learning Lab</a>
+												</li>
+												<li id="menu-item-1492"
+													class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1492">
+													<a title="LPTC Library"
+														href="https://www.littlepriest.edu/library/">LPTC Library</a>
+												</li>
+												<li id="menu-item-1493"
+													class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1493">
+													<a title="Student Policies"
+														href="/wp-content/uploads/Final_Student_Handbook_17-18_rev_1_003.pdf">Student
+														Policies</a>
+												</li>
+												<li id="menu-item-1495"
+													class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1495">
+													<a title="Student conduct &amp; standards"
+														href="/student-conduct-standards/">Student conduct
+														&amp;
+														standards</a>
+												</li>
+											</ul>
+										</li>
+										<li id="menu-item-1496"
+											class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1496 dropdown">
+											<a title="Community Resources" href="/community-resources/" class=""
+												data-hover="dropdown" aria-haspopup="true">Take
+												Part</a>
+										</li>
+									</ul>
+									<div class="btn-menu-container">
+										<div class="btn-menu btn-menu-1 d-none d-lg-block">
+											<a href="#">Support Us</a>
+										</div>
+										<div class="btn-menu btn-menu-2 d-none d-lg-block">
+											<a href="#">register</a>
+										</div>
+									</div>
+									<div class="extra-links-bar extra-links-bar-mobile">
+										<div class="custom-links box">
+											<a href="#">myBGFS</a>
+											<a href="#">blog</a>
+											<a href="#">contact us</a>
+											<a href="#">bgfs productions</a>
+											<div class="search-box box">
+												<button id="open-search" class="open-search">
+													<div class="icon-search"></div>
+												</button>
+											</div>
+											<div class="btn-menu btn-menu-1">
+												<a href="#">Support Us</a>
+											</div>
+											<div class="btn-menu btn-menu-2">
+												<a href="#">register</a>
+											</div>
+										</div>
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div> <!-- container -->
+			</nav>
+		</section>
+	</header>
+	<main role="main">
+
+		<section class="donate-banner">
+			<div class="banner-wrapping">
+				<img src="images/banner-donate-photo.jpg" alt="">
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-12 col-xl-5">
+						<div class="title-page" data-aos="fade-up">
+							<h1>Donate to make a difference today</h1>
+							<p class="subheader">Provide more information about what to find.</p>
+							<p class="description">Your generosity supports our data driven initiatives to educate girls
+								and lead them
+								to STEAM (Science, Technology, Engineering, Arts, Math) focused college majors through
+								filmmaking. </p>
+						</div>
+					</div>
+					<div class="col-12 col-xl-6 offset-xl-1">
+						<div class="donate-form-container">
+							<!-- gravty form -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="donate-support">
+			<div class="container">
+				<div class="row row-testimonial">
+					<span class="bg-logo"><img src="images/bgfs_logo-background.png" alt=""></span>
+					<div class="col-12 col-md-3 offset-xl-2">
+						<div class="title-container">
+							<div class="donate-header">
+								<span class="img-icon"><img src="images/icons/icon-quotes.png" alt=""></span>
+								<span class="uppertitle">testimonials</span>
+							</div>
+							<span class="img-donate">
+								<img src="images/draw-girl-testimonials&pink-brush.png" alt="">
+							</span>
+						</div>
+					</div>
+					<div class="col-12 col-xl-6 cite">
+						<div class="cite-quote">
+							<h6>Black Girl Film School Film Foundations 1 was my first film course taught by a Black
+								female
+								professor.
+								After graduating undergrad in 2021, I will be pursuing my MFA degree in Film at Stanford
+								University.
+							</h6>
+						</div>
+						<div class="cite-sig">
+							<span class="name">Lauren Howell</span>
+							<span class="position">Stanford University</span>
+						</div>
+					</div>
+				</div>
+				<div class="row row-support">
+					<div class="col-md-6 col-xl-4 offset-xl-1">
+						<div class="donate-content">
+							<div class="content-header">
+								<span class="content-icon"><img src="images/icons/you-re-supporting_icon.png"
+										alt=""></span>
+								<span class="content-uppertitle">You're Supporting...</span>
+								<h4 class="content-title">The tools our creators need to tell stories</h4>
+							</div>
+							<div class="content-text">
+								<span>Filmmaking is a coordinated effort in technical skills and storytelling. In order
+									for more
+									underserved girls to participate, creators need access to courses, opportunities to
+									learn, and
+									mentorship. </span>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 col-xl-5 offset-xl-1">
+						<div class="support-data">
+							<span class="data-icon"><img src="images/icons/access-courses_icon.png" alt=""></span>
+							<div class="data-text">
+								<span class="data-title">Access to courses</span>
+								<p class="data-description">Your support will help expand opportunities for more girls
+									that live outside
+									of LA, NY, or ATL to learn filmmaking from industry experts.</p>
+							</div>
+						</div>
+						<div class="support-data">
+							<span class="data-icon"><img src="images/icons/rigorous_icon.png" alt=""></span>
+							<div class="data-text">
+								<span class="data-title">Rigorous academic curriculum</span>
+								<p class="data-description">We use advanced learning technology and curriculums to help
+									our filmmakers
+									innovate new ways to tell stories from behind the camera and your support maintains
+									this standard.
+								</p>
+							</div>
+						</div>
+						<div class="support-data">
+							<span class="data-icon"><img src="images/icons/data-driven_icon.png" alt=""></span>
+							<div class="data-text">
+								<span class="data-title">Data driven mentorship</span>
+								<p class="data-description">Mentorship opportunities at BGFS is data driven and your
+									support helps
+									create inclusion initiatives across media industries and that help send BGFS
+									learners to college</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row row-equipment">
+					<div class="col-xl-5 offset-xl-1">
+						<div class="img-equipment">
+							<img src="images/equipment-photo.jpg" alt="">
+						</div>
+					</div>
+					<div class="col-xl-5">
+						<span class="equipment-uppertitle">Equipment Donations</span>
+						<h3 class="equipment-title">Help girls learn with the best equipment </h3>
+						<div class="equipment-text">
+							<p>Technology changes rapidly and our students need to gain experience operating a variety
+								of professional
+								camera systems</p>
+							<p>BGFS needs equipment to serve our students and offer learning experiences at the highest
+								level. Like
+								traditional film schools, donations, sponsorships, and partnerships that place cameras
+								directly in the
+								hands of learners who have barriers to traditional pathways of access to create is
+								paramount to our
+								mission. </p>
+						</div>
+						<div class="btn-container">
+							<a href="" class="btn-2 secondary">contact us</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="donate-offline">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4 col-xl-3 offset-xl-1">
+						<div class="donate-offline-title">
+							<span class="donate-offline-icon"><img src="images/icons/donate-icon.png" alt=""></span>
+							<span class="uppertitle">Donate Offline</span>
+							<h3>Prefer to donate offline or by ACH?</h3>
+						</div>
+					</div>
+					<div class="col-md-6 offset-md-1">
+						<div class="donate-offline-text">
+							<p>
+								Make checks payable to Black Girl Film School Company and mail to 3680 Wilshire Blvd
+								Suite P04 - 1528,
+								Los Angeles, CA 90010 or Email us for an ACH donation form.
+							</p>
+							<h6 class="donate-question">Questions?</h6>
+							<h6 class="donate-reach">Reach out to <a
+									href="mailto:info@blackgirlfilmschool.com">info@blackgirlfilmschool.com</a></h6>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="donate-thankyou">
+			<div class="bg-wrapper"><img src="images/thanks-support_backgroundphoto.jpg" alt=""></div>
+			<div class="content-wrapper">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-6">
+							<div class="thanks-title">
+								<h4>Thank you for your support!</h4>
+							</div>
+							<div class="thanks-text">
+								<p>Your generosity helps us equip our students with the same cameras professionals use
+									on their
+									commercial
+									and Hollywood projects enabling BGFS learners to train at the highest level.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+	</main>
+
+
+	<footer class="footer-section">
+		<section class="footer-newsletter">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 col-xl-4 newsletter-content">
+						<p class="newsletter-text">Always stay up-to-date</p>
+						<h2 class="newsletter-title">Join our Newsletter.</h2>
+					</div>
+					<div class="col-12 col-xl-8">
+						<div class="sign-up-form text-left" id="sign_up">
+
+							<div class="gf_browser_chrome gform_wrapper gravity-theme newsletterForm_wrapper"
+								id="gform_wrapper_2">
+								<form method="post" enctype="multipart/form-data" target="gform_ajax_frame_2"
+									id="gform_2" class="newsletterForm" action="/volunteer/">
+									<div class="gform_body gform-body">
+										<div id="gform_fields_2"
+											class="gform_fields top_label form_sublabel_below description_below">
+											<fieldset id="field_2_1"
+												class="gfield gfield_contains_required field_sublabel_hidden_label field_description_below gfield_visibility_visible">
+												<legend
+													class="gfield_label screen-reader-text gfield_label_before_complex">
+													<span class="gfield_required">
+														<span class="gfield_required">*</span>
+													</span>
+												</legend>
+												<label class="gfield_label" for="input_2_1_3">Name<span
+														class="gfield_required">*</span></label>
+												<div class="ginput_complex ginput_container no_prefix has_first_name no_middle_name has_last_name no_suffix ginput_container_name"
+													id="input_2_1">
+													<span id="input_2_1_3_container" class="name_first">
+														<input type="text" name="input_1.3" id="input_2_1_3" value=""
+															aria-label="First name" aria-required="true"
+															placeholder="enter your Name">
+														<label for="input_2_1_3"
+															class="hidden_sub_label screen-reader-text">Enter your
+															Name</label>
+													</span>
+
+													<!-- <span id="input_2_1_6_container" class="name_last">
+																	<input type="text" name="input_1.6" id="input_2_1_6" value="" aria-label="Last name" aria-required="true" placeholder="Last Name">
+																	<label for="input_2_1_6" class="hidden_sub_label screen-reader-text">Last</label>
+																</span> -->
+
+												</div>
+											</fieldset>
+											<div id="field_2_2"
+												class="gfield gfield_contains_required field_sublabel_below field_description_below gfield_visibility_visible">
+												<label class="gfield_label" for="input_2_2">Email Address
+													<span class="gfield_required">
+														<span class="gfield_required">*</span>
+													</span>
+												</label>
+												<div class="ginput_container ginput_container_email">
+													<input name="input_2" id="input_2_2" type="text" value=""
+														class="large" placeholder="Email Address" aria-required="true"
+														aria-invalid="false">
+												</div>
+											</div>
+
+											<!-- <fieldset id="field_2_4" class="gfield gfield--width-full gfield_contains_required field_sublabel_below field_description_below hidden_label gfield_visibility_visible">
+															<legend class="gfield_label gfield_label_before_complex">Consent
+																<span class="gfield_required">
+																	<span class="gfield_required gfield_required_text">(Required)</span>
+																</span>
+															</legend>
+															<div class="ginput_container ginput_container_consent">
+																<input name="input_4.1" id="input_2_4_1" type="checkbox" value="1" aria-required="true" aria-invalid="false"> 
+																<label class="gfield_consent_label" for="input_2_4_1">I have read and I accept the 
+																	<a target="_blank" href="https://gasol.mystagingwebsite.com/privacy-policy/">privacy policy</a> and <a target="_blank" href="https://gasol.mystagingwebsite.com/conditions-of-use/">conditions of use</a>.
+																</label>
+																<span class="gfield_required gfield_required_text">(Required)</span>
+																<input type="hidden" name="input_4.2" value="I have read and I accept the <a target=&quot;_blank&quot; href=&quot;https://gasol.mystagingwebsite.com/privacy-policy/&quot;>privacy policy</a> and <a target=&quot;_blank&quot; href=&quot;https://gasol.mystagingwebsite.com/conditions-of-use/&quot;>conditions of use</a>." class="gform_hidden">
+																<input type="hidden" name="input_4.3" value="7" class="gform_hidden">
+															</div>
+														</fieldset>
+														<div id="field_2_3" class="gfield field_sublabel_below field_description_below hidden_label gfield_visibility_visible">
+															<label class="gfield_label" for="input_2_3">CAPTCHA</label><div id="input_2_3" class="ginput_container ginput_recaptcha" data-sitekey="6LejXA0bAAAAAHn1ocISVn2LlhWTGpBsxO3sJnLS" data-theme="light" data-tabindex="-1" data-size="invisible" data-badge="bottomright">
+																<div class="grecaptcha-badge" data-style="none" style="width: 256px; height: 60px; position: fixed; visibility: hidden;">
+																	<div class="grecaptcha-logo">
+																		<iframe title="reCAPTCHA" src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6LejXA0bAAAAAHn1ocISVn2LlhWTGpBsxO3sJnLS&amp;co=aHR0cHM6Ly9nYXNvbC5teXN0YWdpbmd3ZWJzaXRlLmNvbTo0NDM.&amp;hl=en&amp;v=eKRIyK-9MtX6JxeZcNZIkfUq&amp;theme=light&amp;size=invisible&amp;badge=bottomright&amp;cb=pmaqr7e63hi9" width="256" height="60" role="presentation" name="a-vj8blfujug2d" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox" tabindex="-1">
+																		</iframe>
+																	</div>
+																	<div class="grecaptcha-error"></div>
+																	<textarea id="g-recaptcha-response-1" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea>
+																</div>
+																<iframe style="display: none;"></iframe>
+															</div>
+														</div> -->
+										</div>
+									</div>
+									<div class="gform_footer top_label">
+										<div
+											class="gfield gfield--width-full gfield_html gfield_html_formatted gfield_no_follows_desc field_sublabel_below field_description_below gfield_visibility_visible">
+											<span class="icon video"></span>
+										</div>
+										<input type="submit" id="gform_submit_button_2" class="gform_button button"
+											value="Sign Me Up"
+											onclick="if(window[&quot;gf_submitting_2&quot;]){return false;}  window[&quot;gf_submitting_2&quot;]=true;  "
+											onkeypress="if( event.keyCode == 13 ){ if(window[&quot;gf_submitting_2&quot;]){return false;} window[&quot;gf_submitting_2&quot;]=true;  jQuery(&quot;#gform_2&quot;).trigger(&quot;submit&quot;,[true]); }">
+										<input type="hidden" name="gform_ajax"
+											value="form_id=2&amp;title=&amp;description=&amp;tabindex=0">
+										<input type="hidden" class="gform_hidden" name="is_submit_2" value="1">
+										<input type="hidden" class="gform_hidden" name="gform_submit" value="2">
+
+										<input type="hidden" class="gform_hidden" name="gform_unique_id" value="">
+										<input type="hidden" class="gform_hidden" name="state_2"
+											value="WyJ7XCI0LjFcIjpcIjQ5YTY1YzFkYTA2MzFhNmJlN2E0NjRlNWFmYzRmNDYxXCIsXCI0LjJcIjpcIjMyYmI5N2QyYzU2ZjY2MmExOWJjZWMyMzIxOGY4NDI4XCIsXCI0LjNcIjpcImNmYmVjN2Q0MGI2OTZjMDg5MDUxODFkMWIzNDkzY2VmXCJ9IiwiYWIxZmY1MTQ3MjdiODBhNzdjMzc3MDE3NTA0ZThiMTUiXQ==">
+										<input type="hidden" class="gform_hidden" name="gform_target_page_number_2"
+											id="gform_target_page_number_2" value="0">
+										<input type="hidden" class="gform_hidden" name="gform_source_page_number_2"
+											id="gform_source_page_number_2" value="1">
+										<input type="hidden" name="gform_field_values" value="">
+
+									</div>
+								</form>
+							</div>
+							<iframe style="display:none;width:0px;height:0px;" src="about:blank"
+								name="gform_ajax_frame_2" id="gform_ajax_frame_2"
+								title="This iframe contains the logic required to handle Ajax powered Gravity Forms."></iframe>
+							<script
+								type="text/javascript">gform.initializeOnLoaded(function () { gformInitSpinner(2, 'https://gasol.mystagingwebsite.com/wp-content/plugins/gravityforms/images/spinner.svg'); jQuery('#gform_ajax_frame_2').on('load', function () { var contents = jQuery(this).contents().find('*').html(); var is_postback = contents.indexOf('GF_AJAX_POSTBACK') >= 0; if (!is_postback) { return; } var form_content = jQuery(this).contents().find('#gform_wrapper_2'); var is_confirmation = jQuery(this).contents().find('#gform_confirmation_wrapper_2').length > 0; var is_redirect = contents.indexOf('gformRedirect(){') >= 0; var is_form = form_content.length > 0 && !is_redirect && !is_confirmation; var mt = parseInt(jQuery('html').css('margin-top'), 10) + parseInt(jQuery('body').css('margin-top'), 10) + 100; if (is_form) { jQuery('#gform_wrapper_2').html(form_content.html()); if (form_content.hasClass('gform_validation_error')) { jQuery('#gform_wrapper_2').addClass('gform_validation_error'); } else { jQuery('#gform_wrapper_2').removeClass('gform_validation_error'); } setTimeout(function () { /* delay the scroll by 50 milliseconds to fix a bug in chrome */ }, 50); if (window['gformInitDatepicker']) { gformInitDatepicker(); } if (window['gformInitPriceFields']) { gformInitPriceFields(); } var current_page = jQuery('#gform_source_page_number_2').val(); gformInitSpinner(2, 'https://gasol.mystagingwebsite.com/wp-content/plugins/gravityforms/images/spinner.svg'); jQuery(document).trigger('gform_page_loaded', [2, current_page]); window['gf_submitting_2'] = false; } else if (!is_redirect) { var confirmation_content = jQuery(this).contents().find('.GF_AJAX_POSTBACK').html(); if (!confirmation_content) { confirmation_content = contents; } setTimeout(function () { jQuery('#gform_wrapper_2').replaceWith(confirmation_content); jQuery(document).trigger('gform_confirmation_loaded', [2]); window['gf_submitting_2'] = false; wp.a11y.speak(jQuery('#gform_confirmation_message_2').text()); }, 50); } else { jQuery('#gform_2').append(contents); if (window['gformRedirect']) { gformRedirect(); } } jQuery(document).trigger('gform_post_render', [2, current_page]); }); });</script>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<div class="footer">
+			<div class="footer-top">
+				<div class="container">
+					<div class="row">
+						<div class="col-12 col-md-3 col-lg-2">
+							<div class="single-box logo-box">
+								<figure class="logo-footer">
+									<a href="#">
+										<img class="" src="images/logo-color.png" alt="image event description">
+									</a>
+									<figcaption class="sr-only">describes it from a functional perspective</figcaption>
+								</figure>
+							</div>
+						</div>
+
+						<div class="col-12 col-md-3 col-lg-2 offset-xl-1">
+							<div class="single-box menu-box ">
+								<div class="menu-footer-container">
+									<div class="menu-footer-menu-container">
+										<ul id="menu-footer-menu" class="menu-footer">
+											<li id="menu-item-3929"
+												class="active menu-item menu-item-type-custom menu-item-object-custom menu-item-3929">
+												<a href="#">About</a>
+											</li>
+											<li id="menu-item-3930"
+												class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3930">
+												<a href="#">Film School</a>
+											</li>
+											<li id="menu-item-3931"
+												class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3930">
+												<a href="#">Events</a>
+											</li>
+											<li id="menu-item-3932"
+												class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3930">
+												<a href="#">Take Part</a>
+											</li>
+											<!-- <li id="menu-item-3931" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3931">
+														<a href="#">Get Involved</a>
+														<ul class="sub-menu">
+															<li id="menu-item-3306" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3306"><a href="https://sunflower.mystagingwebsite.com/major-donors-supporters/">Major Donors &amp; Supporters</a></li>
+															<li id="menu-item-3305" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3305"><a href="https://sunflower.mystagingwebsite.com/hospital-medical-locations/">Hospital &amp; Medical Locations</a></li>
+															<li id="menu-item-3304" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3304"><a href="https://sunflower.mystagingwebsite.com/fitness-locations/">Fitness Locations</a></li>
+														</ul>
+													</li>
+													<li id="menu-item-3932" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3932">
+														<a href="#">Events</a>
+														<ul class="sub-menu">
+															<li id="menu-item-3309" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3309"><a href="https://sunflower.mystagingwebsite.com/training-counseling/">Training &amp; Counseling</a></li>
+															<li id="menu-item-3307" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3307"><a href="https://sunflower.mystagingwebsite.com/certification/">Certification</a></li>
+															<li id="menu-item-3308" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3308"><a href="https://sunflower.mystagingwebsite.com/employment/">Employment</a></li>
+														</ul>
+													</li>
+													<li id="menu-item-3933" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3933">
+														<a href="#">News</a>
+														<ul class="sub-menu">
+															<li id="menu-item-3310" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3310"><a href="https://sunflower.mystagingwebsite.com/donate/">Sign up</a></li>
+															<li id="menu-item-3312" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3312"><a href="https://sunflower.mystagingwebsite.com/volunteer/">Donate</a></li>
+															<li id="menu-item-3311" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3311"><a href="https://sunflower.mystagingwebsite.com/partnership-opportunities/">Partnership Opportunities</a></li>
+														</ul>
+													</li> -->
+											<!-- <li class="btn-1 border-white">
+														<a href="#">Apply</a>
+													</li>
+													<li class="btn-1 secondary">
+														<a href="#">Donate</a>
+													</li> -->
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-md-3 col-lg-2">
+							<div class="single-box address-box">
+								<address>
+									Address Line 1 <br>
+									Address Line 2<br>
+									City, State, Zipcode
+								</address>
+							</div>
+						</div>
+
+						<div class="col-12 col-md-3 col-lg-2">
+							<div class="single-box contact-info">
+								<div class="contact-links">
+									<span class="contact-email"><a href="mailto:info@org.org">info@org.org</a></span>
+									<span class="contact-phone"><a href="tel:123-456-7890">123-456-7890</a></span>
+								</div>
+								<div class="footer-social">
+									<span class="follow">follow us</span>
+									<ul class="social-network">
+										<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+										<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+										<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-md-9 col-lg-3 col-xl-2 offset-xl-1">
+							<div class="single-box productions">
+								<a href="" class="productions-text"><span class="productions-icon"> <img
+											src="images/icons/bgfs-productions-icon.png" alt=""></span> bgfs
+									productions</a>
+								<span class="btn-container">
+									<a href="" class="btn-1">Support Us</a><a href=""
+										class="btn-1 secondary-dark">register</a>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer-bottom ">
+				<div class="container">
+					<div class="row">
+						<div class="col-12">
+							<div class="footer-sig">
+								<span class="copy-r">© 2022 Black Girl Film School</span>
+								<span class="created-by">Nonprofit Website Design by <a href="">Elevation Web</a></span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<!--script-->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery.js"></script>
+	<script src="js/jquery.mobile.custom.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+
+	<script src="js/main-height-box.js"></script>
+
+	<!--FontAwesome-->
+	<!-- <script defer src="fontawesome/js/all.min.js"></script> -->
+	<!--AOS Animation -->
+	<script src="aos-animation/aos.js"></script>
+
+
+
+</body>
+
+<script src="js/jquery.fancybox.min.js"></script>
+
+<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+
+<script src="js/main.js"></script>
+
+<script>
+	AOS.init({
+		easing: 'ease-out-back',
+		duration: 800,
+		delay: 300,
+		once: true,
+		disable: 'mobile'
+	});
+</script>
+
+</html>

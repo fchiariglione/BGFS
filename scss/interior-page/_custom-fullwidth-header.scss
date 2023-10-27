@@ -1,0 +1,59 @@
+.custom-fullwidth-header{
+	position: relative;
+	min-height: 297px;
+	&::after{
+		content: "";
+		position: absolute;
+		display: block;
+		width: 100%;
+		height: 100%;
+		background-color: #000000;
+		opacity: 0.58;
+		z-index: 1;
+		top: 0;
+	}
+	&::before{
+		content: "";
+		position: absolute;
+		display: block;
+		width: 100%;
+		height: 8px;
+		bottom: -8px;
+		left: 0;
+		z-index: 2;
+		background: linear-gradient(90deg, #B191DF -2.36%, #0FB1A4 33.42%, #651AE6 68.52%, #E01576 100.92%);
+
+	}
+	.img-wrapper{
+		position: absolute;
+		height: 100%;
+		width: 100%;
+		overflow: hidden;
+		z-index: 0;
+		img{
+			z-index: 0;
+			display: block;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			object-position: center;
+		}
+	}
+	.content{
+		position: relative;
+		z-index: 2;
+		padding: 90px 0;
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		height: 100%;
+		justify-content: center;
+		align-items: center;
+		h2, h3, h4, h5, h6{
+			text-align: center;
+			color: $white !important;
+			margin-bottom: 23px;
+		}
+	}
+
+}

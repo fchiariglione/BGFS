@@ -1,0 +1,116 @@
+.donate-banner {
+	background-color: $black;
+	min-height: 758px;
+	position: relative;
+	display: flex;
+	align-items: flex-end;
+
+	&::after{
+		content: "";
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		display: block;
+		width: 42.36%;
+		height: 1px;
+		opacity: 0.6;
+		border-bottom:  0.5px solid $primary-dark;
+
+	}
+
+  
+	.banner-wrapping {
+		padding-top: inherit !important;
+		height: 100%;
+		position: absolute;
+		width: 100vw;
+		top: 0;
+		right: 0;
+
+		img {
+			width: 100%;
+			object-fit: cover;
+			height: 100%;
+			max-width: 100%;
+			max-height: 100%;
+		}
+
+		&::after {
+			content: "";
+			display: block;
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			top: 0;
+			left: 0;
+			background-image: url('../images/banner-donate_shadows.png');
+			background-size: cover;
+		}
+	}
+  
+	.container {
+		position: relative;
+		z-index: 10;
+		padding-bottom: 43px;
+		padding-top: 165px;
+		@media (min-width: 1200px){
+			padding-top: 0;
+		}
+	}
+  
+	.title-page {
+		max-width: 100%;
+		z-index: 15;
+		// margin-bottom: 30px;
+		margin-left: auto;
+		margin-right: auto;
+		position: relative;
+		h1 {
+			color: white;
+		}
+
+		p {
+			position: relative;
+			z-index: 15;
+			&.subheader{
+				@include font1;
+				font-style: normal;
+				font-weight: normal;
+				font-size: 20px;
+				line-height: 1.30;
+				letter-spacing: 0.05em;
+				text-transform: uppercase;
+				color: $white;
+				margin: 20px 0 !important;
+			}
+			&.description{
+				@include font1;
+				font-style: normal;
+				font-weight: normal;
+				font-size: 15px;
+				line-height: 20px;
+				letter-spacing: 0.05em;
+				color: $primary;
+			}
+		}
+
+		.links{
+			a{
+				margin-bottom: 15px;
+			}
+		}
+	}
+  
+	.donate-form-container{
+		background-color: rgba(224, 21, 118, .81);
+		box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.0734812);
+		border-radius: 1px;
+		position: relative;
+		z-index: 7;
+		padding: 30px;
+		@media (min-width: 1200px){
+			padding: 26px 95px;
+		}
+	}
+}
+  
